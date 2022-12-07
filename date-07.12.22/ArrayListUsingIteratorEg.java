@@ -44,8 +44,8 @@ public class ArrayListUsingIteratorEg {
 			System.out.println(itr1.next());
 		}
 		//
-		System.out.println("traversing using for iterator- forward");// forward
-		ListIterator<String> itr2 = a1.listIterator();
+		System.out.println("traversing using for iterator- backward");// backward
+		ListIterator<String> itr2 = a1.listIterator(a1.size());
 		while(itr2.hasPrevious()) {
 			System.out.println(itr2.previous());
 		}
